@@ -4,6 +4,15 @@ Assignment 9 — EM-4 (BSC07) | INFT Engineering
 Topic  : Spearman Rank Correlation & Parabolic Curve Fitting
 Run    : streamlit run app.py
 Input  : CSV Upload  OR  Manual Entry
+Description :
+This project implements statistical methods including Spearman Rank
+Correlation and Parabolic Curve Fitting with visualization.
+
+Features :
+- Handles CSV file input and manual data entry
+- Automatically detects tied values and applies correction
+- Displays step-by-step calculation and graphical analysis
+- Interactive UI using Streamlit
 =============================================================================
 """
 
