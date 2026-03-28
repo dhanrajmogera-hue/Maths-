@@ -134,6 +134,9 @@ C = {
 }
 
 def style_ax(ax, title, xlabel, ylabel):
+    """
+    Applies consistent dark theme styling to matplotlib axes.
+    """
     ax.set_facecolor(C["panel"])
     ax.set_title(title, fontsize=10, fontweight="bold", color=C["dark"], pad=7)
     ax.set_xlabel(xlabel, fontsize=8, color=C["gray"])
@@ -143,6 +146,9 @@ def style_ax(ax, title, xlabel, ylabel):
     for sp in ax.spines.values(): sp.set_edgecolor(C["border"])
 
 def smart_xticks(ax, idx, labels, max_show=12):
+    """
+    Dynamically adjusts x-axis ticks to avoid clutter in large datasets.
+    """
     n    = len(idx)
     step = max(1, n // max_show)
     ax.set_xticks(idx[::step])
