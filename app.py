@@ -4,6 +4,16 @@ Assignment 9 — EM-4 (BSC07) | INFT Engineering
 Topic  : Spearman Rank Correlation & Parabolic Curve Fitting
 Run    : streamlit run app.py
 Input  : CSV Upload  OR  Manual Entry
+
+Description :
+This project implements statistical methods including Spearman Rank
+Correlation and Parabolic Curve Fitting with visualization.
+
+Features :
+- Handles CSV file input and manual data entry
+- Automatically detects tied values and applies correction
+- Displays step-by-step calculation and graphical analysis
+- Interactive UI using Streamlit
 =============================================================================
 """
 
@@ -125,6 +135,9 @@ C = {
 }
 
 def style_ax(ax, title, xlabel, ylabel):
+    """
+    Applies consistent dark theme styling to matplotlib axes.
+    """
     ax.set_facecolor(C["panel"])
     ax.set_title(title, fontsize=10, fontweight="bold", color=C["dark"], pad=7)
     ax.set_xlabel(xlabel, fontsize=8, color=C["gray"])
@@ -134,6 +147,9 @@ def style_ax(ax, title, xlabel, ylabel):
     for sp in ax.spines.values(): sp.set_edgecolor(C["border"])
 
 def smart_xticks(ax, idx, labels, max_show=12):
+    """
+    Dynamically adjusts x-axis ticks to avoid clutter in large datasets.
+    """
     n    = len(idx)
     step = max(1, n // max_show)
     ax.set_xticks(idx[::step])
