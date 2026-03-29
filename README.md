@@ -186,4 +186,5 @@ streamlit run app.py
 ### 👨‍💻 Meet Alshi
 - Performed testing and validation  
 - Assisted in dataset verification  
-- Supported debugging and improvements  
+- Supported debugging and improvements
+   
