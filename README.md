@@ -57,6 +57,57 @@ The objective of this project is to implement statistical methods using Python:
   - R² (goodness of fit)
 
 ---
+## ⚙️ Methodology
+
+### 🔹 Spearman Rank Correlation
+
+1. Input data is collected (CSV or manual input)  
+2. Data is converted into ranks  
+3. Ties are handled using average ranking  
+4. Rank differences (d) are calculated  
+5. Square of differences (d²) is computed  
+6. Correlation coefficient is calculated using:
+
+R = 1 − (6 Σd²) / (n(n² − 1))
+
+7. If ties exist, correction factor is applied  
+
+---
+
+### 🔹 Parabolic Curve Fitting
+
+1. Input dataset (x, y) is taken  
+2. Required columns are computed: x², x³, x⁴, xy, x²y  
+3. Normal equations are formed  
+4. Matrix method is used to solve coefficients (a, b, c)  
+5. Curve equation formed: y = a + bx + cx²  
+6. Residuals and R² value are calculated
+---
+## 💻 Code Explanation
+
+### 🔹 Spearman Module (spearman.py)
+
+- `assign_ranks()` → Assigns ranks with tie handling  
+- `compute_spearman()` → Calculates correlation coefficient  
+- `plot_spearman()` → Generates 6-panel visualization  
+
+---
+
+### 🔹 Parabola Module (parabola.py)
+
+- `build_table()` → Creates required mathematical columns  
+- `compute_parabola()` → Solves normal equations  
+- `plot_parabola()` → Displays curve fitting graphs  
+
+---
+
+### 🔹 Main App (app.py)
+
+- Built using Streamlit  
+- Handles user input (CSV/manual)  
+- Calls respective modules  
+- Displays results and graphs
+---
 
 ## 🚀 Features
 
