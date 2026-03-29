@@ -1,11 +1,13 @@
 """
 =============================================================================
 spearman.py
-Member 2 : [Your Name] — Spearman Rank Correlation Logic + 6 Panel Graph
-=============================================================================
-Commits to make:
-  Commit 1: "Added assign_ranks() with tie handling and correction factor"
-  Commit 2: "Added compute_spearman() and 6-panel Spearman graph"
+Member 2 : Swapnil Bhabal — Spearman Rank Correlation Logic + 6 Panel Graph
+
+Enhancements:
+- Added detailed inline comments
+- Improved readability and documentation
+- Minor structural improvements
+
 =============================================================================
 """
 
@@ -134,7 +136,6 @@ def compute_spearman(x, y):
         Tx=Tx, Ty=Ty, Ax=Ax, Ay=Ay,
         has_ties=has_ties
     )
-
 
 # ══════════════════════════════════════════════════════════════════════════════
 #  STEP 5 — 6-PANEL GRAPH
