@@ -1,11 +1,16 @@
 """
 =============================================================================
 parabola.py
-Member 3 : [Your Name] — Parabolic Curve Fitting Logic + 6 Panel Graph
+Member 3 : Swapnil Bhabal -24101B0065 ( Team Leader) — Parabolic Curve Fitting Logic + 6 Panel Graph
 =============================================================================
 Commits to make:
   Commit 1: "Added compute_parabola() with normal equations and matrix solve"
   Commit 2: "Added 6-panel parabola graph with residuals and R² gauge"
+  Enhancements:
+- Added detailed comments and explanations
+- Improved readability of mathematical steps
+- Minor UI/UX related improvements in graph labels
+
 =============================================================================
 """
 
@@ -21,6 +26,8 @@ from utils import C, style_ax, smart_xticks, bar_labels, draw_gauge, label_r2
 
 def build_table(x, y):
     """
+    Used for constructing normal equations for curve fitting.
+
     Compute all columns needed for the working table and normal equations.
 
     Columns: x, y, x², x³, x⁴, xy, x²y
@@ -76,7 +83,7 @@ def compute_parabola(x, y):
     a, b, c = np.linalg.solve(A, B)
 
     # Fitted values and residuals
-    y_fit = a + b * x + c * x**2
+    y_fit = a + b * x + c * x**2  # Predicted values using fitted parabola
     res_v = y - y_fit
 
     # Goodness of fit
@@ -90,6 +97,9 @@ def compute_parabola(x, y):
         ss_res=ss_res, ss_tot=ss_tot, R2=R2,
         table=t, n=n
     )
+"""
+Note: Matrix solving ensures accurate coefficient calculation.
+"""
 
 
 # ══════════════════════════════════════════════════════════════════════════════
