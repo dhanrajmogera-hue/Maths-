@@ -11,6 +11,13 @@
 - **Topic**: Spearman Rank Correlation & Parabolic Curve Fitting
 
 ---
+## 🤝 Contribution
+
+### 👨‍💻 Swapnil Bhabal
+- Added documentation and comments
+- Made the proper documentation of the project 
+- Enhanced readability of the project
+---
 
 ## 📖 Project Description
 This project implements important statistical methods used in data analysis:
@@ -53,11 +60,3 @@ The application is built using **Python + Streamlit**, providing an interactive 
 1. Install required libraries:
 ```bash
 pip install streamlit numpy pandas matplotlib
-
-
-## 🤝 Contribution
-
-### 👨‍💻 Swapnil Bhabal
-- Added documentation and comments
-- Made the proper documentation of the project 
-- Enhanced readability of the project
