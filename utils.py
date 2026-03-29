@@ -1,7 +1,7 @@
 """
 =============================================================================
 utils.py
-Member 4 : [Altamash Ansari] — Theme Colors, Gauge, Input Parsing, Metric Cards
+Member 4 : [Altamash Ansari] — Theme Colors, Gauge, Input Parsing, Metric Cards.
 =============================================================================
 Commits to make:
   Commit 1: "Added theme colors and matplotlib axis styling"
