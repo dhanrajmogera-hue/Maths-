@@ -9,7 +9,7 @@ Commits to make:
   Enhancements:
 - Added detailed comments and explanations
 - Improved readability of mathematical steps
-- Minor UI/UX related improvements in graph labels
+- Minor UI/UX related improvements in the graph labels
 
 =============================================================================
 """
