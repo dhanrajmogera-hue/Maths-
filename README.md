@@ -1,4 +1,4 @@
-# Maths-
+# Maths
 # 📊 EM-4 Statistical Methods Project
 
 > 🚀 This project provides an interactive dashboard for performing statistical analysis using Spearman Rank Correlation and Parabolic Curve Fitting.
@@ -9,7 +9,6 @@
 - **Subject**: EM-4 (BSC07)
 - **Branch**: Information Technology (INFT)
 - **Topic**: Spearman Rank Correlation & Parabolic Curve Fitting
-
 ---
 ## 🤝 Contribution
 
